@@ -25,8 +25,9 @@ feedback storage both go through it now):
 1. Create a free database — [Neon](https://neon.tech) or
    [Supabase](https://supabase.com) both work, no credit card needed.
 2. Put its connection string in `DATABASE_URL` in `.env.local`.
-3. Apply the schema once: `psql "$DATABASE_URL" -f db/schema.sql` (this also
-   seeds the `demo` client so `/demo` works right away).
+3. Apply the schema once: `npm run db:migrate` (this also seeds the `demo`
+   client so `/demo` works right away). No `psql` install needed — it's a
+   small Node script that runs `db/schema.sql` for you.
 
 ```sh
 npm run dev
