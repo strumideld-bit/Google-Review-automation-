@@ -1,0 +1,132 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 32px 26px;
+  box-shadow: 0 18px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 24px;
+  text-wrap: balance;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.star svg {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: var(--accent, var(--accent-gold));
+  stroke-width: 1.5;
+  transition: fill 0.15s ease;
+}
+
+.star:hover svg,
+.star:focus-visible svg {
+  fill: var(--accent, var(--accent-gold));
+}
+
+.body {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+textarea.field {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.consent input {
+  margin-top: 3px;
+}
+
+.primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--accent, var(--accent-gold));
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secondary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--accent-red);
+  font-size: 0.8rem;
+  text-align: center;
+  margin: -8px 0 12px;
+}

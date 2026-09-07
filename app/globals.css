@@ -1,0 +1,32 @@
+:root {
+  --surface: #dad5c6;
+  --paper: #f2efe5;
+  --ink: #211f1a;
+  --ink-soft: #6e6952;
+  --line: #c7c0a7;
+  --accent-gold: #ad7519;
+  --accent-red: #a23b2c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #121210;
+    --paper: #1e1b15;
+    --ink: #ece7d8;
+    --ink-soft: #a39c86;
+    --line: #3d392d;
+    --accent-gold: #e3a83f;
+    --accent-red: #d6604a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
